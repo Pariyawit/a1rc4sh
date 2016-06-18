@@ -22,7 +22,7 @@ body {
 
 h1,h2,h3,h4,h5{
 	font-family: 'Montserrat';
-	font-weight: 200;
+	font-weight: 400;
 	color: $black1;
 }
 
@@ -41,6 +41,16 @@ hr{
 	text-transform: capitalize;
 	height: 36px;
   font-weight: 200;
+}
+
+.btn.btn-accent{
+	background-color: transparent;
+	border: 1px solid $secondary-color;
+	text-transform: capitalize;
+	height: 36px;
+	color: $secondary-color;
+  font-weight: 200;
+  margin: 0 8px;
 }
 
 .btn span{
@@ -239,6 +249,7 @@ div#login{
 
 #sidebar{
 	border-right: 1px solid $grey2;
+	height: 400px;
 	ul{
 		list-style-type: none;
 		padding: 0;
@@ -277,4 +288,10 @@ nav#footer.navbar{
 	width: 100%;
 			position: absolute;
 		bottom: 0;
+}
+
+.page-content{
+	p{
+		color: $black2;
+	}
 }

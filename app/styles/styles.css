@@ -10,7 +10,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat';
-  font-weight: 200;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.87); }
 
 a {
@@ -26,6 +26,15 @@ hr {
   text-transform: capitalize;
   height: 36px;
   font-weight: 200; }
+
+.btn.btn-accent {
+  background-color: transparent;
+  border: 1px solid #f22d58;
+  text-transform: capitalize;
+  height: 36px;
+  color: #f22d58;
+  font-weight: 200;
+  margin: 0 8px; }
 
 .btn span {
   margin: 16px; }
@@ -170,7 +179,8 @@ div#login {
     color: #f22d58; }
 
 #sidebar {
-  border-right: 1px solid #ccc; }
+  border-right: 1px solid #ccc;
+  height: 400px; }
   #sidebar ul {
     list-style-type: none;
     padding: 0; }
@@ -199,3 +209,6 @@ nav#footer.navbar {
   width: 100%;
   position: absolute;
   bottom: 0; }
+
+.page-content p {
+  color: rgba(0, 0, 0, 0.54); }
