@@ -4,7 +4,13 @@ body {
   padding: 0;
   height: 100%;
   background-color: #f6f7f9;
-  color: rgba(0, 0, 0, 0.87); }
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Montserrat';
+  font-weight: 200; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat';
+  font-size: 400; }
 
 a {
   color: #f22d58; }
@@ -15,6 +21,22 @@ hr {
 .btn.btn-primary {
   background-color: #f22d58;
   border: none; }
+
+nav {
+  border-radius: 0;
+  border-color: transparent !important; }
+
+#home nav {
+  height: 55px;
+  border-radius: 0;
+  background-color: rgba(43, 49, 63, 0.8);
+  color: white; }
+  #home nav a {
+    color: white;
+    font-weight: 400; }
+
+#home .home-top {
+  background-image: url("../images/home-bg.jpg"); }
 
 #login {
   height: 100%; }
@@ -47,7 +69,7 @@ div#login {
   color: white; }
   #header a {
     color: white;
-    font-weight: bold; }
+    font-weight: 400; }
 
 #subheader {
   position: absolute;
@@ -61,7 +83,7 @@ div#login {
     padding-top: 8px;
     padding-bottom: 0;
     color: rgba(0, 0, 0, 0.87);
-    font-weight: bold;
+    font-weight: 400;
     height: 36px;
     cursor: pointer; }
   #subheader li.active {
@@ -69,7 +91,7 @@ div#login {
 
 #main {
   margin-top: 55px;
-  margin-bottom: 55px; }
+  padding-bottom: 55px; }
   #main a {
     color: #f22d58; }
 
@@ -81,21 +103,25 @@ div#login {
     #sidebar ul button {
       background-color: #ccc;
       color: white;
-      width: 80%;
-      margin: 0.25em 0;
+      width: 200px;
+      margin: 0.25em 0.5em 0 0;
       text-align: left;
-      padding-left: 2em; }
+      padding-left: 2em;
+      font-weight: 200; }
     #sidebar ul li.active button {
       background-color: #3b507f;
       color: white; }
 
 .wristband-card .card-number {
-  font-weight: bold;
+  font-weight: 400;
   color: #f22d58; }
 
-#footer {
+nav#footer.navbar {
   background-color: #2b313f;
   color: white;
   height: 55px;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
   position: absolute;
   bottom: 0; }

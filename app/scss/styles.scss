@@ -10,12 +10,19 @@ $grey2: #ccc;
 
 html,
 body {
-   margin:0;
-   padding:0;
-   height:100%;
-
+	margin:0;
+	padding:0;
+	height:100%;
 	background-color: #f6f7f9;
 	color: $black1;
+
+	font-family: 'Montserrat';
+	font-weight: 200;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Montserrat';
+	font-size: 400;
 }
 
 a{
@@ -29,6 +36,27 @@ hr{
 .btn.btn-primary{
 	background-color: $secondary-color;
 	border: none;
+}
+
+nav{
+	border-radius: 0;
+	border-color: transparent !important;
+}
+
+#home{
+	nav{
+		height: 55px;
+		border-radius: 0;
+		background-color: rgba(43,49,63,0.8);
+		color: $white1;
+		a{
+			color: $white1;
+			font-weight: 400;
+		}
+	}
+	.home-top{
+		background-image: url('../images/home-bg.jpg');
+	}
 }
 
 #login{
@@ -64,7 +92,7 @@ div#login{
 
 #wrapper{
 	min-height:100%;
-   	position:relative;
+		position:relative;
 }
 
 #header{
@@ -74,7 +102,7 @@ div#login{
 	color: $white1;
 	a{
 		color: $white1;
-		font-weight: bold;
+		font-weight: 400;
 	}
 }
 
@@ -91,7 +119,7 @@ div#login{
 		padding-top: 8px;
 		padding-bottom: 0;
 		color: $black1;
-		font-weight: bold;
+		font-weight: 400;
 		height: 36px;    
 		cursor: pointer;
 	}
@@ -102,8 +130,8 @@ div#login{
 }
 
 #main{
-	margin-top: 55px;
-	margin-bottom: 55px;
+	margin-top: 55px;	
+	padding-bottom: 55px;
 
 	a{
 		color:$secondary-color;
@@ -118,10 +146,11 @@ div#login{
 		button{
 			background-color: $grey2;
 			color: $white1;
-			width: 80%;
-			margin: 0.25em 0 ;
+			width: 200px;
+			margin: 0.25em 0.5em 0 0 ;
 			text-align: left;
-    		padding-left: 2em;
+				padding-left: 2em;
+				font-weight: 200;
 		}
 		li.active{
 			button{
@@ -135,15 +164,18 @@ div#login{
 
 .wristband-card{
 	.card-number{
-		font-weight: bold;
+		font-weight: 400;
 		color: $secondary-color;
 	}
 }
 
-#footer{
+nav#footer.navbar{
 	background-color: $grey;
 	color: $white1;
 	height: 55px;
-	position:absolute;
-   bottom:0;
+	border-radius: 0;
+	margin-bottom: 0;
+	width: 100%;
+			position: absolute;
+		bottom: 0;
 }
