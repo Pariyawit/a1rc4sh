@@ -39,6 +39,9 @@ hr {
 .text-black {
   color: rgba(0, 0, 0, 0.87); }
 
+.text-white {
+  color: white; }
+
 nav {
   border-radius: 0;
   border-color: transparent !important; }
@@ -46,22 +49,23 @@ nav {
 .content {
   margin: 32px 0; }
 
+#home nav, #login nav {
+  z-index: 99;
+  height: 55px;
+  border-radius: 0;
+  background-color: rgba(43, 49, 63, 0.8);
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  #home nav a, #login nav a {
+    color: white;
+    font-weight: 400; }
+
 #home {
   background-color: white;
   color: rgba(0, 0, 0, 0.54); }
-  #home nav {
-    z-index: 99;
-    height: 55px;
-    border-radius: 0;
-    background-color: rgba(43, 49, 63, 0.8);
-    color: white;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-    #home nav a {
-      color: white;
-      font-weight: 400; }
   #home .home-top {
     background-image: url("../images/home-bg.jpg");
     background-color: #ccc;
@@ -91,18 +95,26 @@ nav {
     display: block; }
 
 #login {
-  height: 100%; }
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  width: 100%; }
   #login .jumbotron {
     max-width: 400px;
     padding: 2em;
     border-radius: 5px;
-    margin: 5em auto;
+    margin: 120px auto 0 auto;
     background-color: white; }
   #login button {
     width: 100%;
     padding: 3px; }
     #login button span {
       text-transform: capitalize; }
+  #login h4 {
+    font-weight: 200;
+    margin: 32px 0; }
+    #login h4 span {
+      font-weight: 400; }
 
 div#login {
   background-color: #2b313f;

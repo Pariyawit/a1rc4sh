@@ -59,6 +59,10 @@ hr{
 	color: $black1;
 }
 
+.text-white{
+	color: $white1;
+}
+
 nav{
 	border-radius: 0;
 	border-color: transparent !important;
@@ -69,25 +73,26 @@ nav{
 }
 
 
+#home nav, #login nav{
+	z-index: 99;
+	height: 55px;
+	border-radius: 0;
+	background-color: rgba(43,49,63,0.8);
+	color: $white1;
+	margin: 0;
+	position: absolute;
+	top:0;
+	width: 100%;
+	a{
+		color: $white1;
+		font-weight: 400;
+	}
+}
+
 $topHeight : 450px;
 #home{
 	background-color: white;
 	color:$black2;
-	nav{
-		z-index: 99;
-		height: 55px;
-		border-radius: 0;
-		background-color: rgba(43,49,63,0.8);
-		color: $white1;
-		margin: 0;
-		position: absolute;
-		top:0;
-		width: 100%;
-		a{
-			color: $white1;
-			font-weight: 400;
-		}
-	}
 	.home-top{
 		background-image: url('../images/home-bg.jpg');
 		background-color: #ccc;
@@ -130,11 +135,14 @@ $topHeight : 450px;
 
 #login{
 	height: 100%;
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	width: 100%;
 	.jumbotron{
 		max-width: 400px;
 		padding: 2em;
 		border-radius: 5px;
-		margin: 5em auto;
+		margin: 120px auto 0 auto;
 		background-color: $white1;
 	}
 	button{
@@ -142,6 +150,13 @@ $topHeight : 450px;
 		padding: 3px;
 		span{
 			text-transform: capitalize;
+		}
+	}
+	h4{
+		font-weight: 200;
+		margin: 32px 0;
+		span{
+			font-weight: 400;
 		}
 	}
 }

@@ -1,7 +1,10 @@
 <div id="login">
+
+	<div ng-include src="'views/shared/menu-home.html'"></div>
+
 	<div class="jumbotron">
 		<center><img src="images/logo-circle.png" alt=""></center>
-		<center><h3>I have an <b>AirCash</b> account.</h3></center>
+		<center><h4>I have an <span>AirCash</span> account.</h4></center>
 		<form ng-submit="login.submit()">
 		  <div class="form-group">
 			<!-- <label>Email</label> -->
@@ -19,4 +22,7 @@
 		  <!-- <a class="pull-right" href="#/register">register</a> -->
 		</form>
 	</div>
+	<center>
+		<p class="text-white" style="margin:16px">I need a AirCash account. <a ng-click="go('/register')">Create An Account!</a></p>
+	</center>
 </div>
