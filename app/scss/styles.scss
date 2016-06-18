@@ -22,11 +22,13 @@ body {
 
 h1,h2,h3,h4,h5{
 	font-family: 'Montserrat';
-	font-size: 400;
+	font-weight: 200;
+	color: $black1;
 }
 
 a{
 	color:$secondary-color;
+	cursor: pointer;
 }
 
 hr{
@@ -36,6 +38,25 @@ hr{
 .btn.btn-primary{
 	background-color: $secondary-color;
 	border: none;
+	text-transform: capitalize;
+	height: 36px;
+  font-weight: 200;
+}
+
+.btn span{
+	margin: 16px;
+}
+
+.btn.btn-md{
+	width: 200px;
+}
+
+.text-accent{
+	color: $secondary-color;
+}
+
+.text-black{
+	color: $black1;
 }
 
 nav{
@@ -43,12 +64,25 @@ nav{
 	border-color: transparent !important;
 }
 
+.content{
+	margin: 32px 0;
+}
+
+
+$topHeight : 450px;
 #home{
+	background-color: white;
+	color:$black2;
 	nav{
+		z-index: 99;
 		height: 55px;
 		border-radius: 0;
 		background-color: rgba(43,49,63,0.8);
 		color: $white1;
+		margin: 0;
+		position: absolute;
+		top:0;
+		width: 100%;
 		a{
 			color: $white1;
 			font-weight: 400;
@@ -56,7 +90,42 @@ nav{
 	}
 	.home-top{
 		background-image: url('../images/home-bg.jpg');
+		background-color: #ccc;
+		height: $topHeight;
+		color: rgba(255,255,255,0.95);
+		text-align: center;
+		h1{
+			font-weight: 200;
+			color: rgba(255,255,255,0.95);
+			letter-spacing: 2px;
+			margin: 0;
+		}
+		p{
+			letter-spacing: 1px;
+		}
+		.heading{
+			margin-top: 150px;
+			margin-bottom: 50px;
+		}
 	}
+
+	.home-bottom{
+		/*background-color: white;*/
+		padding-bottom: 55px;
+		form{
+		}
+	}
+}
+
+#writbandcard{
+	margin-top: -150px;
+	img{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+		display: block;
+	}
+
 }
 
 #login{

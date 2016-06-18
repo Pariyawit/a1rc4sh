@@ -9,11 +9,11 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <!-- <a class="navbar-brand" href="#"><img src="images/logo.png" style="height:55px"></a> -->
-	      <a class="" href="#"><img src="images/logo.png" id="logo" style="height:35px"></a>
+	      <a class="" href="#"><img src="images/logo.png" id="logo" style="height:35px;margin-top:8px;"></a>
 	    </div>
 	    <div id="navbar" class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">LOGIN</a></li>
+	        <li><a ng-click="go('/login')">LOGIN</a></li>
 	        <li><a href="#">REGISTER</a></li>
 	      </ul>
 	    </div>
@@ -21,10 +21,54 @@
 	</nav>
 
 	<div class="home-top">
-		
+		<div class="container">
+			<div class="heading">
+				<h1>PAYMENT BETTER. FASTER.</h1>
+						<p><em>Thailand's leading Cashless Payments and Transactions</em></p>
+			</div>
+			<button class="btn btn-primary"><span>REGISTER YOUR WRISTBAND / CARD</span></button>
+		</div>
 	</div>
 	<div class="home-bottom">
-		
+		<div id="writbandcard">
+			<img src="images/home-wristbandcard.png">
+		</div>
+		<div class="container">
+			<div class="row"><div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-6">
+						<h4>CHECK BALANCE</h4>
+						<div class="content">
+							<form ng-submit="">
+							  <div class="form-group">
+								<input ng-model="login.username" type="text" class="form-control" placeholder="Wristband Code / Card Number" required>
+							  </div>
+							  <div class="form-group">
+								<input ng-model="login.password" type="password" class="form-control" placeholder="WSC / CSC" required>
+							  </div>
+							  <button type="submit" class="btn btn-primary btn-md"><span>CHECK BALANCE</span></button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h4 class="text-accent">RELOAD A WRISTBAND / CARD</h4>
+						<div class="content">
+							<p>
+								Is your Wristband/card b alance getting low? Reload in a snap. 
+								Don't miss out on the most convenient way to pay!
+							</p>
+						</div>
+						<button class="btn btn-primary btn-md"><span>RELOAD</span></button>
+					</div>
+				</div>
+			</div>
+		</div></div>
 	</div>
-
+	<div>
+		<img src="images/payment.png" style="width: 100%;" alt="">
+	</div>
+	<div style="height:80px">
+	</div>
 </div>
+
+<div ng-include src="'views/shared/footer.html'"></div>

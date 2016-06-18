@@ -10,33 +10,85 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat';
-  font-size: 400; }
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.87); }
 
 a {
-  color: #f22d58; }
+  color: #f22d58;
+  cursor: pointer; }
 
 hr {
   border-top: 1px solid #ccc; }
 
 .btn.btn-primary {
   background-color: #f22d58;
-  border: none; }
+  border: none;
+  text-transform: capitalize;
+  height: 36px;
+  font-weight: 200; }
+
+.btn span {
+  margin: 16px; }
+
+.btn.btn-md {
+  width: 200px; }
+
+.text-accent {
+  color: #f22d58; }
+
+.text-black {
+  color: rgba(0, 0, 0, 0.87); }
 
 nav {
   border-radius: 0;
   border-color: transparent !important; }
 
-#home nav {
-  height: 55px;
-  border-radius: 0;
-  background-color: rgba(43, 49, 63, 0.8);
-  color: white; }
-  #home nav a {
-    color: white;
-    font-weight: 400; }
+.content {
+  margin: 32px 0; }
 
-#home .home-top {
-  background-image: url("../images/home-bg.jpg"); }
+#home {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.54); }
+  #home nav {
+    z-index: 99;
+    height: 55px;
+    border-radius: 0;
+    background-color: rgba(43, 49, 63, 0.8);
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    #home nav a {
+      color: white;
+      font-weight: 400; }
+  #home .home-top {
+    background-image: url("../images/home-bg.jpg");
+    background-color: #ccc;
+    height: 450px;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center; }
+    #home .home-top h1 {
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.95);
+      letter-spacing: 2px;
+      margin: 0; }
+    #home .home-top p {
+      letter-spacing: 1px; }
+    #home .home-top .heading {
+      margin-top: 150px;
+      margin-bottom: 50px; }
+  #home .home-bottom {
+    /*background-color: white;*/
+    padding-bottom: 55px; }
+
+#writbandcard {
+  margin-top: -150px; }
+  #writbandcard img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    display: block; }
 
 #login {
   height: 100%; }
