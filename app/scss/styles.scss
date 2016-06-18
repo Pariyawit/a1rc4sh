@@ -5,7 +5,7 @@ $black2: rgba(0,0,0,0.54);
 $white1: rgba(255,255,255,1);
 $white2: rgba(255,255,255,0.7);
 
-$grey: #2b313f;
+$grey: #2c313f;
 $grey2: #ccc;
 
 html,
@@ -51,6 +51,10 @@ hr{
 	width: 200px;
 }
 
+input.input-lg{
+	width: 400px;
+}
+
 .text-accent{
 	color: $secondary-color;
 }
@@ -73,7 +77,7 @@ nav{
 }
 
 
-#home nav, #login nav{
+nav#menu-home{
 	z-index: 99;
 	height: 55px;
 	border-radius: 0;
@@ -87,6 +91,10 @@ nav{
 		color: $white1;
 		font-weight: 400;
 	}
+}
+
+#register #menu-home{
+		background-color: #2c313f;
 }
 
 $topHeight : 450px;
@@ -171,6 +179,13 @@ div#login{
 .form-group{
 	label{
 
+	}
+}
+
+#register{
+	h1,h2,h3,h4,h5{
+		font-family: 'Montserrat';
+		font-weight: 400;
 	}
 }
 

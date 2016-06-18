@@ -1,20 +1,136 @@
-<div class="panel panel-default">
-  <div class="panel-heading">Register</div>
-  <div class="panel-body">
-    <form>
-      <div class="form-group">
-        <label>Username</label>
-        <input type="text" class="form-control" placeholder="Username" required>
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" class="form-control" placeholder="Password" required>
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" class="form-control" placeholder="Email" required>
-      </div>
-      <center><button type="submit" class="btn btn-success">Register</button></center>
-    </form>
-  </div>
+<div id="register">
+	<div ng-include src="'views/shared/menu-home.html'"></div>
+	<div style="height:100px;"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h3>Create My AirCash Account</h3>
+
+							
+				<form ng-submit="register.submit()">
+					<br>
+					<h4 class="text-accent">Your Login Data</h4>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+						  <div class="form-group">
+								<label>Email</label>
+								<input ng-model="register.username" type="text" class="form-control" required>
+						  </div>
+						  <div class="form-group">
+								<label>Password</label>
+								<input ng-model="register.password" type="password" class="form-control" required>
+						  </div>
+						  <div class="form-group">
+								<label>Confirm Password</label>
+								<input ng-model="register.confirmpassword" type="password" class="form-control" required>
+						  </div>
+						</div>	
+					</div>
+					<br>
+
+				  <h4 class="text-accent">Your Personal Information</h4>
+					<hr>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Firstname (ENG)</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  	</div>
+						<div class="form-group col-sm-6">
+							<label>Lastname (ENG)</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  	</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Firstname (TH)</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  	</div>
+						<div class="form-group col-sm-6">
+							<label>Lastname (TH)</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  	</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="form-group col-sm-12">
+							<label>Mailing Address 1</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  </div>
+					  <div class="form-group col-sm-12">
+							<label>Mailing Address 2</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  </div>
+				  	<div class="form-group col-sm-6">
+							<label>City</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+				  	<div class="form-group col-sm-6">
+							<label>Province</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+				  	<div class="form-group col-sm-6">
+							<label>Postcode</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+				  	<div class="form-group col-sm-6">
+							<label>Country</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+					</div>
+					<br>
+					<div class="row">
+				  	<div class="form-group col-sm-6">
+							<label>Mobile Phone</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Birthday</label>
+							<input ng-model="" type="date" class="form-control" required>
+				  	</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<span class="text-accent">ATTENTION:</span> Please make sure your birthday is correct. You won't be able to change this field once you registered.
+						</div>
+					</div>
+					<br>
+
+				  <h4 class="text-accent">Your Wristband / Card</h4>
+					<hr>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Wristband / Card Number</label>
+							<input ng-model="" type="text" class="form-control" required>
+					  </div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>WSC / CSC Code</label>
+							<input ng-model="" type="text" class="form-control" required>
+				  	</div>
+				  </div>
+					<br>
+					<div class="row">
+						<h5 class="text-accent">I have read and agreed to the following : </h5>
+						<div class="form-group col-sm-12">
+							<input type="checkbox"> 	Terms and Conditions
+				  	</div>
+						<div class="form-group col-sm-12">
+							<input type="checkbox"> Privacy Policy
+				  	</div>
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-md">REGISTER</button>
+				</form>
+			
+			</div>
+		</div>
+	</div>
+	
 </div>
+	<div style="height:100px;"></div>
+
+<div ng-include src="'views/shared/footer.html'"></div>
