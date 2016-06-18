@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f6f7f9;
+  color: rgba(0, 0, 0, 0.87); }
+
+.form-login {
+  padding: 2em; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
+#header {
+  height: 55px;
+  border-radius: 0;
+  background-color: #2b313f;
+  color: white; }
+  #header a {
+    color: white;
+    font-weight: bold; }
+
+#subheader {
+  position: absolute;
+  top: 55px;
+  background-color: white;
+  width: 100%;
+  height: 36px;
+  min-height: 36px;
+  border-radius: 0; }
+  #subheader a {
+    padding-top: 8px;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: bold;
+    height: 36px; }
+  #subheader a.active {
+    border-bottom: solid 2px #f22d58; }
+
+#main {
+  margin-top: 55px;
+  margin-bottom: 55px; }
+  #main a {
+    color: #f22d58; }
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; }
+  #sidebar ul button {
+    background-color: #cccccc;
+    color: white;
+    width: 80%;
+    margin: 0.25em 0;
+    text-align: left;
+    padding-left: 2em; }
+  #sidebar ul li.active button {
+    background-color: #3b507f;
+    color: white; }
+
+#footer {
+  background-color: #2b313f;
+  color: white;
+  height: 55px;
+  position: absolute;
+  bottom: 0; }

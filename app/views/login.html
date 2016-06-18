@@ -1,0 +1,31 @@
+<div class="login panel panel-default">
+  <div class="panel-heading">Login</div>
+  <div class="">
+  	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
+  			<div class="form-login jumbotron">
+				<center><h3>I have an <b>AirCash</b> account.</h3></center>
+				<form ng-submit="login.submit()">
+				  <div class="form-group">
+					<label>Email</label>
+					<input ng-model="login.username" type="text" class="form-control" placeholder="Username (max 30 charactor)" maxlength="30" required>
+				  </div>
+				  <div class="form-group">
+					<label>Password</label>
+					<input ng-model="login.password" type="password" class="form-control" placeholder="Password (max 10 charactor)" maxlength="10" required>
+				  </div>
+				  <div class="form-group">
+						 <span class="input-group-addon">
+						  <input type="checkbox"> I have read and agreed to the AirCash Wristband/Card Term of Use and the Privacy Policy</input>
+						</span>
+				  </div>
+				  <center><button type="submit" class="btn btn-primary">Login</button></center>
+				  <!-- <a class="pull-right" href="#/register">register</a> -->
+				</form>
+			  </div>
+  		</div>
+  		<div class="col-md-4"></div>
+  	</div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+$primary-color: #3b507f;
+$secondary-color: #f22d58;
+$black1: rgba(0,0,0,0.87);
+$black2: rgba(0,0,0,0.54);
+$white1: rgba(255,255,255,1);
+$white2: rgba(255,255,255,0.7);
+
+$gray: #2b313f;
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+
+	background-color: #f6f7f9;
+	color: $black1;
+}
+
+
+.form-login{
+	padding: 2em;
+}
+
+.form-group{
+	label{
+
+	}
+}
+
+#wrapper{
+	min-height:100%;
+   	position:relative;
+}
+
+#header{
+	height: 55px;
+	border-radius: 0;
+	background-color: $gray;
+	color: $white1;
+	a{
+		color: $white1;
+		font-weight: bold;
+	}
+}
+
+#subheader{
+	position: absolute;
+	top: 55px;
+	background-color: white;
+	width: 100%;
+	height: 36px;
+	min-height: 36px;
+	border-radius: 0;
+	
+	a{
+		padding-top: 8px;
+		padding-bottom: 0;
+		color: $black1;
+		font-weight: bold;
+		height: 36px;
+	}
+
+	a.active{
+		border-bottom: solid 2px $secondary-color;
+	}
+}
+
+#main{
+	margin-top: 55px;
+	margin-bottom: 55px;
+
+	a{
+		color:$secondary-color;
+	}
+}
+
+#sidebar{
+	ul{
+		list-style-type: none;
+		padding: 0;
+		button{
+			background-color: #cccccc;
+			color: $white1;
+			width: 80%;
+			margin: 0.25em 0 ;
+			text-align: left;
+    		padding-left: 2em;
+		}
+		li.active{
+			button{
+				background-color: $primary-color;
+				color: $white1;
+
+			}
+		}
+	}
+}
+
+#footer{
+	background-color: $gray;
+	color: $white1;
+	height: 55px;
+	position:absolute;
+   bottom:0;
+}
