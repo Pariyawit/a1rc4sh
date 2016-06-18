@@ -1,9 +1,0 @@
-<div ng-init="qr.init()">
-    <center><qrcode version="2" error-correction-level="M" size="200" data={{qr.user._id}}></qrcode></center>
-    <ul class="list-group">
-      <li class="list-group-item" ng-repeat="item in qr.user.events[0].orders">
-        <span class="badge">{{item.price}}฿</span>
-        {{item.name}}
-      </li>
-    </ul>
-</div>

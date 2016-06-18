@@ -6,8 +6,35 @@ body {
   background-color: #f6f7f9;
   color: rgba(0, 0, 0, 0.87); }
 
-.form-login {
-  padding: 2em; }
+a {
+  color: #f22d58; }
+
+hr {
+  border-top: 1px solid #ccc; }
+
+.btn.btn-primary {
+  background-color: #f22d58;
+  border: none; }
+
+#login {
+  height: 100%; }
+  #login .jumbotron {
+    max-width: 400px;
+    padding: 2em;
+    border-radius: 5px;
+    margin: 5em auto;
+    background-color: white; }
+  #login button {
+    width: 100%;
+    padding: 3px; }
+    #login button span {
+      text-transform: capitalize; }
+
+div#login {
+  background-color: #2b313f;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
 
 #wrapper {
   min-height: 100%;
@@ -35,8 +62,9 @@ body {
     padding-bottom: 0;
     color: rgba(0, 0, 0, 0.87);
     font-weight: bold;
-    height: 36px; }
-  #subheader a.active {
+    height: 36px;
+    cursor: pointer; }
+  #subheader li.active {
     border-bottom: solid 2px #f22d58; }
 
 #main {
@@ -45,19 +73,25 @@ body {
   #main a {
     color: #f22d58; }
 
-#sidebar ul {
-  list-style-type: none;
-  padding: 0; }
-  #sidebar ul button {
-    background-color: #cccccc;
-    color: white;
-    width: 80%;
-    margin: 0.25em 0;
-    text-align: left;
-    padding-left: 2em; }
-  #sidebar ul li.active button {
-    background-color: #3b507f;
-    color: white; }
+#sidebar {
+  border-right: 1px solid #ccc; }
+  #sidebar ul {
+    list-style-type: none;
+    padding: 0; }
+    #sidebar ul button {
+      background-color: #ccc;
+      color: white;
+      width: 80%;
+      margin: 0.25em 0;
+      text-align: left;
+      padding-left: 2em; }
+    #sidebar ul li.active button {
+      background-color: #3b507f;
+      color: white; }
+
+.wristband-card .card-number {
+  font-weight: bold;
+  color: #f22d58; }
 
 #footer {
   background-color: #2b313f;

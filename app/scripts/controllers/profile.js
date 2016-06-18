@@ -8,8 +8,10 @@
  * Controller of the aircashApp
  */
 angular.module('aircashApp')
-  .controller('ProfileCtrl', ['$http', '$routeParams', '$location',
-    function ($http, $routeParams, $location) {
+  .controller('ProfileCtrl', ['$scope', '$http', '$routeParams', '$location',
+    function ($scope, $http, $routeParams, $location) {
+      $scope["pageGroup"] = "profile";
+      $scope["page"] = "profile";
       var self = this;
       this.linkQr = function () {
         $location.path('qr/' + $routeParams.username);

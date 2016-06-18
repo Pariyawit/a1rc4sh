@@ -30,14 +30,42 @@ app.config(function ($routeProvider) {
         controller: 'TopupCtrl',
         controllerAs: 'topup'
       })
-      .when('/profile/:username', {
+      .when('/profile', {
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl',
         controllerAs: 'profile'
-      }).when('/wristbandcard/:username', {
+      }).when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      }).when('/wristbandcard', {
         templateUrl: 'views/wristbandcard.html',
         controller: 'WristbandCardCtrl',
         controllerAs: 'wristbandcard'
+      }).when('/wristbandcard/reload', {
+        templateUrl: 'views/reload.html',
+        controller: 'ReloadCtrl',
+        controllerAs: 'reload'
+      }).when('/wristbandcard/transaction', {
+        templateUrl: 'views/transaction.html',
+        controller: 'TransactionCtrl',
+        controllerAs: 'transaction'
+      }).when('/wristbandcard/history', {
+        templateUrl: 'views/history.html',
+        controller: 'HistoryCtrl',
+        controllerAs: 'history'
+      }).when('/wristbandcard/faq', {
+        templateUrl: 'views/faq.html',
+        controller: 'FaqCtrl',
+        controllerAs: 'faq'
+      }).when('/wristbandcard/report', {
+        templateUrl: 'views/report.html',
+        controller: 'ReportCtrl',
+        controllerAs: 'report'
+      }).when('/wristbandcard/transaction', {
+        templateUrl: 'views/transaction.html',
+        controller: 'TransactionCtrl',
+        controllerAs: 'transaction'
       })
       .otherwise({
         redirectTo: '/'

@@ -8,8 +8,8 @@
  * Controller of the aircashApp
  */
 angular.module('aircashApp')
-  .controller('MainCtrl', [ '$http', '$location',
-    function ($http, $location) {
+  .controller('MainCtrl', ['$scope', '$http', '$location',
+    function ($scope, $http, $location) {
       // var req = {
       //   method: 'GET',
       //   url: 'http://localhost:8080/user'
@@ -25,5 +25,8 @@ angular.module('aircashApp')
       // }, function(error) {
       //   console.log(error);
       // });
+      $scope.go = function(path){
+        $location.path(path);
+      }
     }
   ]);

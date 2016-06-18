@@ -2,8 +2,8 @@
   <div class="container-fluid">
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="active">My Profile</a></li>
-        <li><a href="#">My Wristband/Cards</a></li>
+        <li ng-class="{'active' :  pageGroup == 'profile'}"><a ng-click="go('/profile')">My Profile</a></li>
+        <li ng-class="{'active' :  pageGroup == 'wristbandcard'}"><a ng-click="go('/wristbandcard')">My Wristband/Cards</a></li>
       </ul>
     </div>
   </div>

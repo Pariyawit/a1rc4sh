@@ -1,6 +1,10 @@
 <div id="sidebar">
   <ul class="sidebar-nav">
-    <li class="active"><button class="btn btn-default"><span>Personal Info</span></button></li>
-    <li><button class="btn btn-default"><span>Contact Info</span></button></li>    
+    <li ng-class="{'active' :  page == 'profile'}">
+    	<button ng-click="go('/profile')" class="btn btn-default"><span>Personal Info</span></button>
+    </li>
+    <li ng-class="{'active' :  page == 'contact'}">
+    	<button ng-click="go('/contact')" class="btn btn-default"><span>Contact Info</span></button>
+    </li>    
 	</ul>
 </div>

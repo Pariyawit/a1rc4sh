@@ -5,7 +5,8 @@ $black2: rgba(0,0,0,0.54);
 $white1: rgba(255,255,255,1);
 $white2: rgba(255,255,255,0.7);
 
-$gray: #2b313f;
+$grey: #2b313f;
+$grey2: #ccc;
 
 html,
 body {
@@ -17,9 +18,42 @@ body {
 	color: $black1;
 }
 
+a{
+	color:$secondary-color;
+}
 
-.form-login{
-	padding: 2em;
+hr{
+	border-top: 1px solid $grey2;
+}
+
+.btn.btn-primary{
+	background-color: $secondary-color;
+	border: none;
+}
+
+#login{
+	height: 100%;
+	.jumbotron{
+		max-width: 400px;
+		padding: 2em;
+		border-radius: 5px;
+		margin: 5em auto;
+		background-color: $white1;
+	}
+	button{
+		width: 100%;
+		padding: 3px;
+		span{
+			text-transform: capitalize;
+		}
+	}
+}
+
+div#login{
+	background-color: $grey;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 .form-group{
@@ -36,7 +70,7 @@ body {
 #header{
 	height: 55px;
 	border-radius: 0;
-	background-color: $gray;
+	background-color: $grey;
 	color: $white1;
 	a{
 		color: $white1;
@@ -58,10 +92,11 @@ body {
 		padding-bottom: 0;
 		color: $black1;
 		font-weight: bold;
-		height: 36px;
+		height: 36px;    
+		cursor: pointer;
 	}
 
-	a.active{
+	li.active{
 		border-bottom: solid 2px $secondary-color;
 	}
 }
@@ -76,11 +111,12 @@ body {
 }
 
 #sidebar{
+	border-right: 1px solid $grey2;
 	ul{
 		list-style-type: none;
 		padding: 0;
 		button{
-			background-color: #cccccc;
+			background-color: $grey2;
 			color: $white1;
 			width: 80%;
 			margin: 0.25em 0 ;
@@ -97,8 +133,15 @@ body {
 	}
 }
 
+.wristband-card{
+	.card-number{
+		font-weight: bold;
+		color: $secondary-color;
+	}
+}
+
 #footer{
-	background-color: $gray;
+	background-color: $grey;
 	color: $white1;
 	height: 55px;
 	position:absolute;
