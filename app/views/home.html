@@ -7,7 +7,7 @@
 				<h1>PAYMENT BETTER. FASTER.</h1>
 						<p><em>Thailand's leading Cashless Payments and Transactions</em></p>
 			</div>
-			<button class="btn btn-primary"><span>REGISTER YOUR WRISTBAND / CARD</span></button>
+			<button ng-click="go('/register')"class="btn btn-primary"><span>REGISTER YOUR WRISTBAND / CARD</span></button>
 		</div>
 	</div>
 	<div class="home-bottom">
@@ -27,7 +27,7 @@
 							  <div class="form-group">
 								<input ng-model="login.password" type="password" class="form-control" placeholder="WSC / CSC" required>
 							  </div>
-							  <button type="submit" class="btn btn-primary btn-md"><span>CHECK BALANCE</span></button>
+							  <button type="submit" ng-click="go('/login')" class="btn btn-primary btn-md"><span>CHECK BALANCE</span></button>
 							</form>
 						</div>
 					</div>
@@ -39,12 +39,17 @@
 								Don't miss out on the most convenient way to pay!
 							</p>
 						</div>
-						<button class="btn btn-primary btn-md"><span>RELOAD</span></button>
+						<button ng-click="go('/login')" class="btn btn-primary btn-md"><span>RELOAD</span></button>
 					</div>
 				</div>
 			</div>
 		</div></div>
 	</div>
+	<center>
+		<a href="https://play.google.com/store/apps/details?id=com.aircash">
+			<img src="images/googleplay-support.png" alt=""></a>
+	</center>
+	<br>
 	<div>
 		<img src="images/payment.png" style="width: 100%;" alt="">
 	</div>

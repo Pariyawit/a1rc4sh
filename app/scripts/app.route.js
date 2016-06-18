@@ -23,6 +23,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
         controllerAs: 'register'
+      }).when('/complete', {
+        templateUrl: 'views/complete.html',
+        controller: 'RegisterCtrl',
+        controllerAs: 'register'
       })
       .when('/qr/:username', {
         templateUrl: 'views/qr.html',
