@@ -54,6 +54,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'views/reload.html',
         controller: 'ReloadCtrl',
         controllerAs: 'reload'
+      }).when('/wristbandcard/reload-complete', {
+        templateUrl: 'views/reload-complete.html',
+        controller: 'ReloadCtrl',
+        controllerAs: 'reload'
       }).when('/wristbandcard/transaction', {
         templateUrl: 'views/transaction.html',
         controller: 'TransactionCtrl',
