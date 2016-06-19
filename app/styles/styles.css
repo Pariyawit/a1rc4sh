@@ -180,8 +180,7 @@ div#login {
     color: #f22d58; }
 
 #sidebar {
-  border-right: 1px solid #ccc;
-  height: 400px; }
+  border-right: 1px solid #ccc; }
   #sidebar ul {
     list-style-type: none;
     padding: 0; }
